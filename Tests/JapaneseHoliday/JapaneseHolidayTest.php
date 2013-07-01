@@ -2,6 +2,7 @@
 
 namespace Nanaweb\JapaneseHolidayBundle\Tests\JapaneseHoliday;
 
+use Symfony\Component\Yaml\Yaml;
 use Nanaweb\JapaneseHolidayBundle\JapaneseHoliday\JapaneseHoliday;
 
 require_once __DIR__.'/../bootstrap.php';
@@ -10,7 +11,8 @@ class JapaneseHolidayTest extends \PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        $this->japaneseHoliday = new JapaneseHoliday();
+        $configuration = Yaml::parse(__DIR__.'/../../Resources/config/holidays.yml');
+        $this->japaneseHoliday = new JapaneseHoliday($configuration['parameters']['nanaweb_japanese_holiday.holiday_list']);
     }
 
     public function testFixedHoliday()

@@ -1,6 +1,6 @@
 <?php
 
-$symfonyPath = __DIR__ . '/../../../../symfony/src';
+$symfonyPath = __DIR__ . '/../../../../../symfony/symfony/src';
 require_once $symfonyPath.'/Symfony/Component/ClassLoader/UniversalClassLoader.php';
 
 use Symfony\Component\ClassLoader\UniversalClassLoader;

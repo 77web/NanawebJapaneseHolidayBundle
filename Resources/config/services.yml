@@ -1,4 +1,4 @@
 services:
     nanaweb_japanese_holiday.holidays:
         class: Nanaweb\JapaneseHolidayBundle\JapaneseHoliday\JapaneseHoliday
-        arguments: []
+        arguments: ["%nanaweb_japanese_holiday.holiday_list%"]

@@ -2,8 +2,6 @@
 
 namespace Nanaweb\JapaneseHolidayBundle\JapaneseHoliday;
 
-use Symfony\Component\Yaml\Yaml;
-
 class JapaneseHoliday
 {
     protected $configuration = array();
@@ -11,9 +9,12 @@ class JapaneseHoliday
     const NATIONAL_HOLIDAY_CAPTION = '国民の休日';
     const SUBSTITUTE_HOLIDAY_CAPTION = '振替休日';
     
-    public function __construct()
+    /**
+     * @param array $configuration
+     */
+    public function __construct(array $configuration)
     {
-        $this->configuration = Yaml::parse(__DIR__.'/../Resources/config/holidays.yml');
+        $this->configuration = $configuration;
     }
     
     public function getHolidaysForYear($year = null)
