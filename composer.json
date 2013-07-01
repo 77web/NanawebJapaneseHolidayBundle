@@ -14,10 +14,5 @@
     "autoload": {
         "psr-0": { "Nanaweb\\JapaneseHolidayBundle": "" }
     },
-    "target-dir": "Nanaweb/JapaneseHolidayBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "master"
-        }
-    }
+    "target-dir": "Nanaweb/JapaneseHolidayBundle"
 }
