@@ -2,7 +2,7 @@
 
 namespace Nanaweb\JapaneseHolidayBundle\JapaneseHoliday;
 
-class JapaneseHoliday
+class Calculator
 {
     protected $configuration = array();
     protected $holidays = array();
