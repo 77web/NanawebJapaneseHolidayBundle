@@ -5,10 +5,11 @@ namespace Nanaweb\JapaneseHolidayBundle\Tests\JapaneseHoliday;
 use Symfony\Component\Yaml\Yaml;
 use Nanaweb\JapaneseHolidayBundle\JapaneseHoliday\Calculator;
 
-require_once __DIR__.'/../bootstrap.php';
-
 class JapaneseHolidayTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var Calculator
+     */
     protected $calculator;
 
     public function setUp()
