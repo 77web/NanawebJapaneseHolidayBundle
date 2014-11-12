@@ -10,7 +10,10 @@
     ],
     "require": {
         "symfony/yaml": "~2.5",
-        "japanese/holiday": "dev-master@dev"
+        "japanese/holiday": "dev-master@dev",
+        "symfony/console": "~2.5",
+        "symfony/framework-bundle": "~2.5",
+        "doctrine/orm": "~2.4"
     },
     "autoload": {
         "psr-0": { "Nanaweb\\JapaneseHolidayBundle": "" }
