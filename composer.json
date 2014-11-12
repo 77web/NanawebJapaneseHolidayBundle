@@ -8,8 +8,9 @@
             "homepage": "https://github.com/77web"
         }
     ],
-    "require-dev": {
-        "symfony/yaml": ">2.0"
+    "require": {
+        "symfony/yaml": "~2.5",
+        "japanese/holiday": "dev-master@dev"
     },
     "autoload": {
         "psr-0": { "Nanaweb\\JapaneseHolidayBundle": "" }

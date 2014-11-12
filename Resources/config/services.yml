@@ -1,4 +1,3 @@
 services:
     nanaweb_japanese_holiday.holidays:
-        class: Nanaweb\JapaneseHolidayBundle\JapaneseHoliday\Calculator
-        arguments: ["%nanaweb_japanese_holiday.holiday_list%"]
+        class: Japanese\Holiday\Repository
